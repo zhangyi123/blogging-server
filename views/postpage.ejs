@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>to be done</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  	<% const createdDate = new Date(post.created); %>
+  	<% let modifiedDate = new Date(post.modified); %>
+    <h1>Title: <%= post.title %></h1>
+    <h2>Author: <%= post.username %></h2>
+    <p>Content: <%= post.body %></p>
+    <p>Created time: <%= createdDate %> </p>
+    <p>Modified time: <%= modifiedDate %> </p>
+  </body>
+</html>
+
+

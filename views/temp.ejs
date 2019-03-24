@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>dfas</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  	<% let len = p.length %>
+  	<% let i=parseInt(num)+5; %>
+  	<ul>
+  		
+    	<% for(let j=num ; j < i && j<len; j++) { %>
+        	<li><%- p[j].title %></li>
+    	<% } %>
+	</ul>
+	<% if(i>=len) { %>  <%/* need to revise */%>
+	<% let url ="/blog/" %>
+	<% url= url+name +"?start=" +i %>
+	<a id="next" href="<%- url -%>">next</a>
+	<% } %>
+
+  </body>
+</html>
